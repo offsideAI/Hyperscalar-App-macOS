@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+"CFBundleDisplayName" = "Hyperbolic";
+"CFBundleName" = "Hyperbolic";
+"NSHumanReadableCopyright" = "Copyright © 2026 Hyperbolic. All rights reserved.";

@@ -1,34 +1,34 @@
-# Macabolic 🚀
+# Hyperbolic 🚀
 
 A modern, fast, and beautiful video downloader for macOS. Powered by `yt-dlp`.
 
 <div align="center">
-  <img src="Macabolic/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="128" />
+  <img src="Hyperbolic/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="128" />
   <p>
-    <a href="https://github.com/alinuxpengui/Macabolic/releases/latest/download/Macabolic-v3.1.0.dmg">
-      <img src="https://img.shields.io/badge/Download-macOS-blue?style=for-the-badge&logo=apple&logoColor=white" alt="Download Macabolic for macOS" />
+    <a href="https://github.com/offsideai/Hyperbolic/releases/latest/download/Hyperbolic-v3.1.0.dmg">
+      <img src="https://img.shields.io/badge/Download-macOS-blue?style=for-the-badge&logo=apple&logoColor=white" alt="Download Hyperbolic for macOS" />
     </a>
-    <a href="https://github.com/alinuxpengui/homebrew-macabolic">
+    <a href="https://github.com/offsideai/homebrew-hyperbolic">
       <img src="https://img.shields.io/badge/Homebrew-tap-FBB040?style=for-the-badge&logo=homebrew&logoColor=white" alt="Install via Homebrew" />
     </a>
-    <a href="https://github.com/alinuxpengui/Macabolic/releases">
-      <img src="https://img.shields.io/github/downloads/alinuxpengui/Macabolic/total?style=for-the-badge&color=818cf8" alt="Total Downloads" />
+    <a href="https://github.com/offsideai/Hyperbolic/releases">
+      <img src="https://img.shields.io/github/downloads/offsideai/Hyperbolic/total?style=for-the-badge&color=818cf8" alt="Total Downloads" />
     </a>
   </p>
   <p>
-    <a href="https://mastodon.social/@macabolic_app">
+    <a href="https://mastodon.social/@hyperbolic_app">
       <img src="https://img.shields.io/badge/Follow-Mastodon-2b90d9?style=for-the-badge&logo=mastodon&logoColor=white" alt="Follow on Mastodon" />
     </a>
-    <a href="https://bsky.app/profile/macabolicapp.bsky.social">
+    <a href="https://bsky.app/profile/hyperbolicapp.bsky.social">
       <img src="https://img.shields.io/badge/Follow-Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Follow on Bluesky" />
     </a>
-    <a href="https://x.com/macabolic_app">
+    <a href="https://x.com/hyperbolic_app">
       <img src="https://img.shields.io/badge/Follow-X-black?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" />
     </a>
   </p>
 </div>
 
-Macabolic is a native macOS frontend for the powerful [yt-dlp](https://github.com/yt-dlp/yt-dlp) command-line tool. It allows you to download videos and audio from YouTube and thousands of other supported sites with ease.
+Hyperbolic is a native macOS frontend for the powerful [yt-dlp](https://github.com/yt-dlp/yt-dlp) command-line tool. It allows you to download videos and audio from YouTube and thousands of other supported sites with ease.
 
 ## Screenshots 📸
 
@@ -50,10 +50,10 @@ Macabolic is a native macOS frontend for the powerful [yt-dlp](https://github.co
 ## Support My Journey ❤️
 
 **Note on Sponsorships:**  
-Direct financial support via GitHub Sponsors is currently disabled due to local tax and regulatory complexities. While I truly appreciate the generosity of everyone who wanted to contribute, the best way to support Macabolic right now is by **starring the repository**, reporting bugs, or sharing the project with the community. Thank you for understanding! 🙏
+Direct financial support via GitHub Sponsors is currently disabled due to local tax and regulatory complexities. While I truly appreciate the generosity of everyone who wanted to contribute, the best way to support Hyperbolic right now is by **starring the repository**, reporting bugs, or sharing the project with the community. Thank you for understanding! 🙏
 
 ### 🏆 The "First 5" Wall of Fame
-To show my gratitude, the **first 5 sponsors** of any amount will be **permanently featured** in the "About" section of the Macabolic app. Your name will be part of the app's history forever!
+To show my gratitude, the **first 5 sponsors** of any amount will be **permanently featured** in the "About" section of the Hyperbolic app. Your name will be part of the app's history forever!
 
 1. [**Iman Montajabi**](https://github.com/ImanMontajabi) 🌟 (Our first ever sponsor!)
 2. [**Semmelstulle**](https://github.com/Semmelstulle) 🌟
@@ -62,7 +62,7 @@ To show my gratitude, the **first 5 sponsors** of any amount will be **permanent
 
 ## Roadmap 🗺️
 
-Here is what I'm planning to bring to Macabolic in the near future:
+Here is what I'm planning to bring to Hyperbolic in the near future:
 
 - [x] ~~**Browser Cookies Support:** Use cookies from your browser to bypass YouTube's bot detection and access age-restricted or private content.~~ ✅ (Completed in v2.2.0)
 - [x] ~~**Advanced Codec Default Settings & Presets:** Save and manage custom download presets with preferred codecs, resolutions, and audio quality settings.~~ ✅ (Completed in v2.2.0)
@@ -97,19 +97,19 @@ Here is what I'm planning to bring to Macabolic in the near future:
 ### Option 1: Homebrew (Recommended)
 
 ```bash
-brew tap alinuxpengui/macabolic
-brew install --cask macabolic
-xattr -cr /Applications/Macabolic.app
+brew tap offsideai/hyperbolic
+brew install --cask hyperbolic
+xattr -cr /Applications/Hyperbolic.app
 ```
 
 ### Option 2: Manual Download
 
-- **Download:** Download the latest `Macabolic-v3.0.0.dmg` from the [Releases](https://github.com/alinuxpengui/Macabolic/releases) page.
-- **Install:** Open the DMG file and drag **Macabolic** to your `Applications` folder.
+- **Download:** Download the latest `Hyperbolic-v3.0.0.dmg` from the [Releases](https://github.com/offsideai/Hyperbolic/releases) page.
+- **Install:** Open the DMG file and drag **Hyperbolic** to your `Applications` folder.
 - **First Launch:** Since the app is not notarized, you have two options to open it:
   - **Terminal Way:** Run the following command to remove the quarantine flag:
 ```bash
-xattr -cr /Applications/Macabolic.app
+xattr -cr /Applications/Hyperbolic.app
 ```
   - **Other Way:** Right-click the app in your Applications folder and select Open, or go to System Settings > Privacy & Security and click Open Anyway.
 - **Initial Setup:** When the app opens, you will be greeted by a **Legal Disclaimer**. Please read and confirm it. Go to **Preferences (⌘,)** to set your **Language** and **Default Save Folder**.
@@ -117,18 +117,18 @@ xattr -cr /Applications/Macabolic.app
 ### Option 3: Browser Extensions 🌐
 
 #### Chrome / Brave / Edge:
-1. **Download:** [MacabolicExtension_Chrome.zip](https://github.com/alinuxpengui/Macabolic/releases/download/v3.0.0/MacabolicExtension_Chrome.zip) and unzip it.
+1. **Download:** [HyperbolicExtension_Chrome.zip](https://github.com/offsideai/Hyperbolic/releases/download/v3.0.0/HyperbolicExtension_Chrome.zip) and unzip it.
 2. Go to `chrome://extensions/`
 3. Enable **"Developer mode"** (top right).
 4. Click **"Load unpacked"** and select the unzipped folder.
 
 #### Firefox:
-1. **Download:** [MacabolicExtension_Firefox.zip](https://github.com/alinuxpengui/Macabolic/releases/download/v3.0.0/MacabolicExtension_Firefox.zip) and unzip it.
+1. **Download:** [HyperbolicExtension_Firefox.zip](https://github.com/offsideai/Hyperbolic/releases/download/v3.0.0/HyperbolicExtension_Firefox.zip) and unzip it.
 2. Go to `about:debugging#/runtime/this-firefox`
 3. Click **"Load Temporary Add-on..."**.
 4. Select the `manifest.json` file inside the unzipped folder.
 
-> 💡 **Usage:** Once installed, simply **right-click** on any video link or the page itself on supported sites (like YouTube) and select **"Download with Macabolic"** to start downloading immediately.
+> 💡 **Usage:** Once installed, simply **right-click** on any video link or the page itself on supported sites (like YouTube) and select **"Download with Hyperbolic"** to start downloading immediately.
 
 ---
 
@@ -146,7 +146,7 @@ xattr -cr /Applications/Macabolic.app
 ## Legal Disclaimer ⚖️
 
 This tool is intended solely for personal use and educational or research purposes.
-Videos on YouTube and other sites may be subject to DMCA protection. The authors of Parabolic/Macabolic do not endorse, and are not responsible for, the use of this application in means that will violate these laws.
+Videos on YouTube and other sites may be subject to DMCA protection. The authors of Parabolic/Hyperbolic do not endorse, and are not responsible for, the use of this application in means that will violate these laws.
 Downloading videos from YouTube may violate their Terms of Service unless the video has an explicit download button or the content is licensed in a way that permits downloading.
 By using this app, you assume full responsibility for any content you download and how you use it. The developer does not condone or support any misuse of this tool to infringe upon copyrights or violate platform rules.
 
@@ -159,4 +159,4 @@ This project is licensed under the **GNU General Public License v3.0**. See the 
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=alinuxpengui/Macabolic&type=date&legend=top-left)](https://www.star-history.com/#alinuxpengui/Macabolic&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=offsideai/Hyperbolic&type=date&legend=top-left)](https://www.star-history.com/#offsideai/Hyperbolic&type=date&legend=top-left)

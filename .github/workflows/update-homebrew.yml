@@ -29,17 +29,17 @@ jobs:
         run: |
           # Get the DMG asset URL and download it to calculate SHA256
           TAG_NAME="${{ steps.version.outputs.tag_name }}"
-          ASSET_URL="https://github.com/alinuxpengui/Macabolic/releases/download/${TAG_NAME}/Macabolic-${TAG_NAME}.dmg"
+          ASSET_URL="https://github.com/offsideai/Hyperbolic/releases/download/${TAG_NAME}/Hyperbolic-${TAG_NAME}.dmg"
           
           # Download and calculate SHA256
-          curl -sL "$ASSET_URL" -o macabolic.dmg
-          SHA256=$(sha256sum macabolic.dmg | cut -d' ' -f1)
+          curl -sL "$ASSET_URL" -o hyperbolic.dmg
+          SHA256=$(sha256sum hyperbolic.dmg | cut -d' ' -f1)
           echo "sha256=$SHA256" >> $GITHUB_OUTPUT
 
       - name: Checkout Homebrew Tap
         uses: actions/checkout@v4
         with:
-          repository: alinuxpengui/homebrew-macabolic
+          repository: offsideai/homebrew-hyperbolic
           token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
           path: homebrew-tap
 
@@ -48,20 +48,20 @@ jobs:
           cd homebrew-tap
           
           # Update version
-          sed -i 's/version "[^"]*"/version "${{ steps.version.outputs.version }}"/' Casks/macabolic.rb
+          sed -i 's/version "[^"]*"/version "${{ steps.version.outputs.version }}"/' Casks/hyperbolic.rb
           
           # Update SHA256
-          sed -i 's/sha256 "[^"]*"/sha256 "${{ steps.asset.outputs.sha256 }}"/' Casks/macabolic.rb
+          sed -i 's/sha256 "[^"]*"/sha256 "${{ steps.asset.outputs.sha256 }}"/' Casks/hyperbolic.rb
 
       - name: Commit and push changes
         run: |
           cd homebrew-tap
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add Casks/macabolic.rb
+          git add Casks/hyperbolic.rb
           # Only commit and push if there are changes
           if ! git diff --cached --quiet; then
-            git commit -m "Update Macabolic to v${{ steps.version.outputs.version }}"
+            git commit -m "Update Hyperbolic to v${{ steps.version.outputs.version }}"
             git push
           else
             echo "No changes to commit"
