@@ -66,6 +66,10 @@ compile_commands.json
 # Setup Files
 inno/*.exe
 
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+
 # Custom Builds & Logs
 build_release/
 build_debug/
