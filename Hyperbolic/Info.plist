@@ -10,7 +10,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.bytemeowster.hyperbolic</string>
+			<string>ai.offside.hyperbolic</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>hyperbolic</string>
