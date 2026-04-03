@@ -853,9 +853,9 @@ struct WelcomeView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(languageService.s("select_language"))
                     .font(.headline)
-                
+
                 Picker("", selection: $languageService.selectedLanguage) {
-                    ForEach(Language.allCases) { lang in
+                    ForEach(Language.allCases.filter { $0 != .turkish }) { lang in
                         Text(lang.displayName).tag(lang)
                     }
                 }
