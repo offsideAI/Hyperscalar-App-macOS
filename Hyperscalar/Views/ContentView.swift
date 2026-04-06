@@ -529,9 +529,7 @@ struct SpecialThanksView: View {
                 .foregroundColor(.secondary)
             
             HStack(spacing: 4) {
-                Link("Iman Montajabi", destination: URL(string: "https://github.com/ImanMontajabi")!)
-                Text("&")
-                Link("Semmelstulle", destination: URL(string: "https://github.com/Semmelstulle")!)
+                Link("OffsideAI", destination: URL(string: "https://github.com/OffsideAI")!)
             }
             .font(.system(size: 9, weight: .bold))
             
