@@ -203,7 +203,9 @@ struct MenuBarView: View {
             MenuBarManager.shared.closePopover()
         } label: {
             HStack {
-                Image(systemName: "arrow.down.to.line.compact")
+                Image("HyperscalarIcon")
+                    .resizable()
+                    .frame(width: 16, height: 16)
                 Text(languageService.s("download_btn"))
             }
             .frame(maxWidth: .infinity)

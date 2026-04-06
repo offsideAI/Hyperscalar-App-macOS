@@ -235,12 +235,14 @@ struct DownloadRowView: View {
                     appState.urlToDownload = download.url
                     appState.showAddDownloadSheet = true
                 } label: {
-                    Image(systemName: "arrow.down.circle")
+                    Image("HyperscalarIcon")
+                        .resizable()
+                        .frame(width: 14, height: 14)
                 }
                 .buttonStyle(.borderless)
                 .help(languageService.s("redownload"))
             }
-            
+
             if download.status == .failed || download.status == .stopped {
                 Button {
                     downloadManager.retryDownload(download)
@@ -249,12 +251,14 @@ struct DownloadRowView: View {
                 }
                 .buttonStyle(.borderless)
                 .help(languageService.s("retry"))
-                
+
                 Button {
                     appState.urlToDownload = download.url
                     appState.showAddDownloadSheet = true
                 } label: {
-                    Image(systemName: "arrow.down.circle")
+                    Image("HyperscalarIcon")
+                        .resizable()
+                        .frame(width: 14, height: 14)
                 }
                 .buttonStyle(.borderless)
                 .help(languageService.s("redownload"))

@@ -140,7 +140,17 @@ struct SidebarView: View {
             appState.selectedNavItem = item
         } label: {
             HStack {
-                Label(item.title(lang: languageService), systemImage: item.icon)
+                if item == .downloading {
+                    Label {
+                        Text(item.title(lang: languageService))
+                    } icon: {
+                        Image("HyperscalarIcon")
+                            .resizable()
+                            .frame(width: 16, height: 16)
+                    }
+                } else {
+                    Label(item.title(lang: languageService), systemImage: item.icon)
+                }
                 Spacer()
                 if badgeCount > 0 {
                     Text("\(badgeCount)")
@@ -215,15 +225,18 @@ struct HomeView: View {
                     VStack(spacing: 40) {
                         // Logo & Title Section
                         VStack(spacing: 24) {
-                            ZStack {
-                                Circle()
-                                    .fill(.linearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing))
+                            if let appIcon = NSImage(named: "AppIcon") {
+                                Image(nsImage: appIcon)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 100, height: 100)
-                                    .shadow(color: .purple.opacity(0.3), radius: 15)
-                                
-                                Image(systemName: "arrow.down")
-                                    .font(.system(size: 50, weight: .bold))
-                                    .foregroundColor(.white)
+                                    .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+                                    .shadow(color: Color.black.opacity(0.2), radius: 15, y: 5)
+                            } else {
+                                Image(nsImage: NSApplication.shared.applicationIconImage)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 100, height: 100)
                             }
                             
                             VStack(spacing: 8) {

@@ -32,7 +32,7 @@ class MenuBarManager: NSObject {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let button = statusItem?.button {
-            button.image = NSImage(systemSymbolName: "arrow.down.circle.fill", accessibilityDescription: "Hyperscalar")
+            button.image = NSImage(named: "HyperscalarIcon")?.resized(to: NSSize(width: 18, height: 18))
             button.action = #selector(togglePopover)
             button.target = self
         }
@@ -67,5 +67,21 @@ class MenuBarManager: NSObject {
     func updateMenu() {
         // Menu is now a SwiftUI view, so it updates automatically via EnvironmentObject
         // But we can force a resize if needed or other updates here
+    }
+}
+
+extension NSImage {
+    func resized(to newSize: NSSize) -> NSImage {
+        let img = NSImage(size: newSize)
+        img.lockFocus()
+        let ctx = NSGraphicsContext.current
+        ctx?.imageInterpolation = .high
+        draw(in: NSRect(origin: .zero, size: newSize),
+             from: NSRect(origin: .zero, size: size),
+             operation: .copy,
+             fraction: 1)
+        img.unlockFocus()
+        img.isTemplate = true
+        return img
     }
 }

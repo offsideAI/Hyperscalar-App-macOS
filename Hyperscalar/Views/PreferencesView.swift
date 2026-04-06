@@ -73,7 +73,13 @@ struct PreferencesView: View {
                     
                     downloadTab
                         .tabItem {
-                            Label(languageService.s("download"), systemImage: "arrow.down.circle")
+                            Label {
+                                Text(languageService.s("download"))
+                            } icon: {
+                                Image("HyperscalarIcon")
+                                    .resizable()
+                                    .frame(width: 16, height: 16)
+                            }
                         }
                     
                     advancedTab
